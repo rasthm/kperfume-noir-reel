@@ -1,0 +1,29 @@
+{
+  "name": "kperfume-noir-reel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts NoirReel out/kperfume-noir.mp4 --codec h264 --crf 16",
+    "still": "remotion still src/index.ts NoirReel"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.537",
+    "@remotion/noise": "4.0.537",
+    "@remotion/transitions": "4.0.537",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "sharp": "0.34.3",
+    "typescript": "5.8.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.34.3": true
+  },
+  "license": "MIT"
+}
